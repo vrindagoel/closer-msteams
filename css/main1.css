@@ -59,11 +59,7 @@ http://miradontsoa.com
 	-  Roboto Condensed
 	-  Open Sans with fallback to system-ui fonts
 */
-.enactus{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .text-black {
   color: #1d1d1d !important; }
 

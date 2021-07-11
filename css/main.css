@@ -28,3 +28,12 @@ video {
   -webkit-filter: sepia(1);
   filter: sepia(1);
 }
+
+canvas {
+  border-radius: 8px;border:#F8C471;border-width:5px;border-style:solid;max-width: 100%;  width: 550px;
+}
+
+.buttonsadded {
+  top: 300px;
+  position: relative;
+}

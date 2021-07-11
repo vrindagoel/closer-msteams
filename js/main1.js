@@ -1,8 +1,4 @@
 'use strict';
-// var mainDocument = $(document);
-
-// init foundation
-// $(document).foundation();
 
 // Init all plugin when document is ready 
 $(document).on('ready', function () {
@@ -311,16 +307,6 @@ $(document).on('ready', function () {
 					// Fix for internet explorer : adjust content height
 					// Detect IE 6-11
 					var isIE = /*@cc_on!@*/false || !!document.documentMode;
-					/* if (isIE) {
-						var contentColumns = $('.section .content .c-columns');
-						contentColumns.height(contextWindow.height())
-						for (var i = 0; i < contentColumns.length; i++) {
-							if (contentColumns[i].height <= contextWindow.height()) {
-								contentColumns[i].style.height = "100vh";
-							}
-						}
-					} */
-
 					// init contact form
 					// Default server url
 					var newsletterServerUrl = './ajaxserver/serverfile.php';
@@ -407,15 +393,6 @@ $(document).on('ready', function () {
 
 	});
 
-	//count-item
-
-	// $('.count-item').each(function(i) {
-	// 	$(this).appear(function() {
-	// 		var number = $(this).find('.count-to').data('countto');
-	// 		$(this).find('.count-to').countTo({from: 0, to: number, speed: 1200, refreshInterval: 30});
-	// 	});
-	// });
-
 	// Scroll to fullPage.js next/previous section
 	$('.scrolldown a, .scroll.down').on('click', function () {
 		try {
@@ -451,7 +428,6 @@ $(document).on('ready', function () {
 	contextWindow.on('scroll', function () {
 		var scrollpos = $(this).scrollTop();
 		var siteHeaderFooter = $('.page-footer, .page-header, .page-cover');
-		// if (scrollpos > 10 && scrollpos < scrollHeight - 100) {
 		// hide some ui on scroll
 		if (scrollpos > 100) {
 			siteHeaderFooter.addClass("scrolled");
@@ -486,9 +462,6 @@ $(document).on('ready', function () {
 	var shadowBall = $(".cursor-ball");
 	$(".body-page").mousemove(function(e) {
 		shadowBall.css("transform", "translateX(" + e.pageX + "px)");
-		// shadowBall.css("transform", "translate(" + e.pageX + "px," + e.pageY +"px)");
-		// shadowBall.posx.value = e.pageX;
-		// shadowBall.posy.value = e.pageY;
 	});
 
 });

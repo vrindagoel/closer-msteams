@@ -1,19 +1,10 @@
 <!doctype html>
-<!--
-Website By Miradontsoa / MiVFX
-http://twitter.com/miradontsoa
-http://miradontsoa.com
--->
-
 <html class="no-js" lang="en">
-
-
-<!-- Mirrored from demo.highhay.com/agenci/index-fixed.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Jun 2021 19:24:48 GMT -->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
   <!-- Page Title Here -->
-  <title>Agni</title>
+  <title>Closer</title>
 
   <!-- Meta -->
   <!-- Page Description Here -->
@@ -50,9 +41,6 @@ http://miradontsoa.com
   <link rel="stylesheet" href="fonts/font-awesome.min.css">
   <link rel="stylesheet" href="../../indestructibletype.com/fonts/Jost.css" type="text/css"
   charset="utf-8" />
-
-  
-
   <!-- Vendor CSS style -->
   <link rel="stylesheet" href="css/pageloader.css">
 
@@ -62,9 +50,11 @@ http://miradontsoa.com
   <link rel="stylesheet" href="js/vendor/jquery.fullpage.min.css">
   <link rel="stylesheet" href="js/vegas/vegas.min.css">
 
-  <!-- Main CSS files -->
+  <!-- Main CSS files plus added extra css files-->
+  <link rel="shortcut icon" href="#">
   <link rel=stylesheet href="css/NavigationBar.css">
   <link rel="stylesheet" href="css/main1.css">
+  <link rel="stylesheet" href="css/main.css">
 
   <!-- add alt layout here -->
   <link rel="stylesheet" href="css/style-bg.css">
@@ -83,16 +73,15 @@ http://miradontsoa.com
   <!-- navbar -->
   <div>
     <ul>
-      <li ><a target=Display href="home.html" >Home</a></li>
-      <li class=active style="color: white;"><a onClick="window.location.reload();">Article</a></li>
-      <li  style="float:right;color: white;text-align:center;" id="para1"><a target=Display onmouseover="window.location.reload();"></a></li>
+      <li class=active style="color: white;"><a onclick="window.location.reload();">Article</a></li>
+      <li  style="float:right;color: white;text-align:center;" id="para1"><a target=Display onmouseover="function hi(){alert('Hi!')};hi()"></a></li>
       <script>
         window.onload = function () {
         formatAMPM();
         };
     
-    function formatAMPM() {
-    var d = new Date(),
+        function formatAMPM() {
+        var d = new Date(),
         minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
         hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
         ampm = d.getHours() >= 12 ? 'PM' : 'AM',
@@ -103,34 +92,31 @@ http://miradontsoa.com
         var para1 = document.getElementById("para1");
             para1.innerHTML = time;
     
-    }
-        
-     </script>
+          }
+      </script>
     </ul>
-    </div><br><br><br>
+  </div><br><br><br>
 
      
-
+<!-- Begin of logo/brand -->
   <span class="logo">
     <img class="light-logo" src="img/logo.png" alt="Logo" style="width: 100px; height: 66px;">
     </span>
     <span class="text">
       <span class="line"></span>
-    </span>
-    <!-- End of logo/brand -->
+  </span>
+  <!-- End of logo/brand -->
 
-    
 
   <!-- BEGIN OF page cover -->
   <div class="page-cover">
     <!-- Cover Background -->
     <div class="cover-bg bg-img" data-image-src="img/about8.jpg"></div>
-
-
     <!-- Transluscent mask as filter -->
     <div class="cover-bg-mask bg-color" data-bgcolor="rgba(29, 29, 29, 0.4)"></div>
   </div>
   <!--END OF page cover -->
+
 
   <!-- BEGIN OF page main content -->
   <main class="page-main main-anim scrollpage-container " id="mainpage">
@@ -148,7 +134,7 @@ http://miradontsoa.com
             <div class="col-12 col-md-4 text-left">
               <!-- title and description -->
               <div class="title-desc pr-4">
-                <h2 class="display-5 anim-2">We are more than a firehose.</h2>
+                <h2 class="display-5 anim-2">As the world becomes a more digital place,<br> we cannot forget about the human connection.</h2>
               </div>
 
               <!-- Action button -->
@@ -159,15 +145,14 @@ http://miradontsoa.com
             <div class="col-12 col-md-8 text-left">
               <!-- title and description -->
               <div class="title-desc anim-4" id="vision">
-                <p>Project Agni stands on a trinity of objectives. The project gives decommissioned firehoses a new battle to fight, one against mismanaged waste disposal. </p>
-                <p>
-                  Marginalized women are employed to craft our products. With their newfound financial independence, these women incarnate a phoenix rising from the ashes.
+                <p>The way of communication has experienced periods of letters, radios, telephones and social media platforms. It's undoubtedly that the usage of the internet has been the most helpful way of remaining connected nowadays.<p>
+                  Videoconferencing, although has been a well-developed technology for quite some time now, is just now being realized as a powerful communication tool.
                 </p>
 
-                <p>
-                  We offer an Environment-Conscious Alternative: trade leather with the firehose, replace pollution with sustainability.
+                <p>The act of trying to lie on a sofa, holding the phone up high for the best angle, 
+                  eventually moving closer to the router for a stronger signal has become the new daily workout for
+                   everyone these days!
                 </p>
-             
               </div>
 
             </div>
@@ -195,27 +180,25 @@ http://miradontsoa.com
               <div class="swiper-slide">
                 <div class="media-slide-item-alpha">
                   <div class="media-image mask-black">
-                    <img class="img-block" src="img/items/img-sample4.jpg" alt="Alt Text">
+                    <img class="img-block" src="img/about12.jpg" alt="Alt Text">
                   </div>
                   <div class="media-content fade-3">
                     <div class="row">
                       <div class="col col-12 col-md-4 col-lg-4">
-                        <div class="media-body body-margin-right text-anim">
-                          <h4 class="">Case Study</h4>
-                          <h3 class="">Olympic Reflex</h3>
-                          <p>Business branding, Marketing</p>
-
-                          <div class="btns-action">
-                            <a class="btn btn-line" href="#">
-                              <span class="text">Linkedin</span>
-                            </a>
-                          </div>
+                        <div class="media-body body-margin-right text-anim"><br><br>
+                         
+                          <h3 class=""> Doctors On Call</h3>
+                          <!-- <p>Doctors On Call</p> -->
                         </div>
                       </div>
                       <div class="col col-12 col-md-6 col-lg-6">
                         <div class="media-body centered">
-                          <p>This is just a placeholder text. And this is a website
-                            template, helping you to build modern and beautiful websites.</p>
+                          <p><br><br>
+                             Doctors are now able to consult patients through their phone.<br><br>
+                             While many people may argue that this is not as effective
+                             as an in-person appointment, it has been very beneficial in rural or 
+                             understaffed areas.
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -227,27 +210,23 @@ http://miradontsoa.com
               <div class="swiper-slide">
                 <div class="media-slide-item-alpha">
                   <div class="media-image mask-black">
-                    <img class="img-block" src="img/items/img-sample6.jpg" alt="Alt Text">
+                    <img class="img-block" src="img/about11.jpg" alt="Alt Text">
                   </div>
                   <div class="media-content">
                     <div class="row">
                       <div class="col col-12 col-md-4 col-lg-4">
-                        <div class="media-body body-margin-right text-anim">
-                          <h4 class="">Case Study</h4>
-                          <h3 class="">Resto de l'Ouest</h3>
-                          <p>App, Website</p>
-
-                          <div class="btns-action">
-                            <a class="btn btn-line" href="#">
-                              <span class="text">Linkedin</span>
-                            </a>
+                        <div class="media-body body-margin-right text-anim"><br><br>
+                          <h3 class="">Help To The Deaf Community</h3>
                           </div>
-                        </div>
                       </div>
                       <div class="col col-12 col-md-6 col-lg-6">
                         <div class="media-body centered">
-                          <p>This is just a placeholder text. And this is a website
-                            template, helping you to build modern and beautiful websites.</p>
+                          <p><br><br>
+                            Video calling has been very beneficial for individuals having hearing 
+                            difficulties.<br><br>
+                            Unlike traditional phone calls, the deaf are able to speak in sign 
+                            language to family members, friends and even colleagues.
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -259,27 +238,21 @@ http://miradontsoa.com
               <div class="swiper-slide">
                 <div class="media-slide-item-alpha">
                   <div class="media-image mask-black">
-                    <img class="img-block" src="img/items/img-sample8.jpg" alt="Alt Text">
+                    <img class="img-block" src="img/about13.jpg" alt="Alt Text">
                   </div>
                   <div class="media-content">
                     <div class="row">
                       <div class="col col-12 col-md-4 col-lg-4">
-                        <div class="media-body body-margin-right text-anim">
-                          <h4 class="">Case Study</h4>
-                          <h3 class="">Car Showroom</h3>
-                          <p>Couverture Photo</p>
-
-                          <div class="btns-action">
-                            <a class="btn btn-line" href="#">
-                              <span class="text">Linkedin</span>
-                            </a>
-                          </div>
-                        </div>
+                        <div class="media-body body-margin-right text-anim"><br><br>
+                          <h3 class="">Families Reunited</h3></div>
                       </div>
                       <div class="col col-12 col-md-6 col-lg-6">
                         <div class="media-body centered">
-                          <p>This is just a placeholder text. And this is a website
-                            template, helping you to build modern and beautiful websites.</p>
+                          <p><br><br>Cheaper than regular phone calls and arguably more personal, 
+                            video calls allow people to watch their grandkids grow up and see
+                            their cousin’s new apartment from the comfort of their own home. <br><br>
+                            It’s redefined distance and geography making it easier for people to 
+                            stay in touch. 
                         </div>
                       </div>
                     </div>
@@ -346,33 +319,35 @@ http://miradontsoa.com
             <div class="item col-12 col-lg-4">
               <div class="media media-service">
                 <div class="media-body">
-                  <a class="btn btn-line" href="item.html">
-                    <h4 class="">Concept</h4>
-                  </a>
-                  <p>An awesome service that we offer to you. This is just a placeholder
-                    text.</p>
+                  <a class="btn btn-line">
+                    <h4 class="" style="font-size: 25px;color:#F8C471">Is Efficient</h4>
+                  </a>                 
+                  <p>Enables management to quickly and effectively 
+                    communicate with employees sitting at multiple sites.
+                  </p>
                 </div>
                 </div>
             </div>
             <div class="item col-12 col-lg-4">
               <div class="media media-service">
                 <div class="media-body">
-                  <a class="btn btn-line" href="item.html">
-                    <h4 class="">Design</h4>
+                  <a class="btn btn-line">
+                    <h4 class="" style="font-size: 25px;color:#F8C471">Learning</h4>
                   </a>
-                  <p>An awesome service that we offer to you. This is just a placeholder
-                    text.</p>
+                  <p>
+                    Provides a cost-efficient training 
+                    to individuals without the tarvelling to central locations.
+                  </p>
                 </div>
               </div>
             </div>
             <div class="item col-12 col-lg-4">
               <div class="media media-service mb-0">
                 <div class="media-body">
-                  <a class="btn btn-line" href="item.html">
-                    <h4 class="">Analytics</h4>
+                  <a class="btn btn-line">
+                    <h4 class="" style="font-size: 25px;color:#F8C471">One on one calls</h4>
                   </a>
-                  <p>An awesome service that we offer to you. This is just a placeholder
-                    text.</p>
+                  <p>Interviewing prospective students and staff</p>
                 </div>
               </div>
             </div>
@@ -394,8 +369,13 @@ http://miradontsoa.com
         <!-- content -->
         <div class="section-content anim">
           <div class="title-desc title-margin text-center">
-            <h2 class="display-3 display-title anim-2">An Escape</h2>
-            <p class="anim-3">Closer is here to connect you with your loved ones..</p>
+            <h2 class="display-3 display-title anim-2">
+              <font color="#F8C471">A</font>n 
+              <font color="#F8C471">E</font>scape
+            </h2>
+            <p class="anim-3">Social connection is such a basic feature of human experience
+               that when we are deprived of it, we suffer.
+            </p>
           </div>
 
           <div class="row row-random grid-media-aside-text fade-3"> 
@@ -406,9 +386,9 @@ http://miradontsoa.com
                   <img class="lightbox" src="img/vc1.jpg"  alt="Alt Text">
                 </div>
                 <div class="media-body">
-                  <p>Especially in times like COVID,this webapp
-                     will let you get connected with 
-                     your family and friends.</p>
+                  <p>Especially in times like COVID,Closer will let you get connected with 
+                     your family and friends.
+                  </p>
                 </div>
               </div>
             </div>
@@ -419,9 +399,9 @@ http://miradontsoa.com
                   <img src="img/vc2.jpg"  alt="Alt Text">
                 </div>
                 <div class="media-body">
-                  <p>Closer will make sure your
-                  learning doesn't get hampered 
-                despite the outside conditions.</p>
+                  <p>Closer will make sure your learning doesn't get hampered despite
+                     the outside conditions.
+                  </p>
                 </div>
               </div>
             </div>
@@ -429,10 +409,12 @@ http://miradontsoa.com
             <div class="item col col-12 col-md-6 text-left">
               <div class="media-aside-text">
                 <div class="media-image"><br><br>
-                  <img src="img/vc3.jpg"  alt="Alt Text">
+                  <img src="img/about14.jpg"  alt="Alt Text" max-height=100% height=200px>
                 </div>
                 <div class="media-body">
-                  <p>Closer will allow to get consulted by a doctor while easilt sitting at home.</p>
+                  <p>Oh, is your friend mad at you?<br>
+                  Well that's because you weren't Closer to him :/
+                  </p>
                 </div>
               </div>
             </div>
@@ -555,10 +537,8 @@ http://miradontsoa.com
 
   <!-- Javascript main files -->
   <script src="js/main1.js"></script>
+  <script src="js/main.js"></script>
 
 
 </body>
-
-
-<!-- Mirrored from demo.highhay.com/agenci/index-fixed.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Jun 2021 19:29:43 GMT -->
 </html>

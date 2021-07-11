@@ -3,15 +3,13 @@
   
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>Realtime communication with Closer</title>
+  <title>Closer</title>
+   <!-- Main CSS files plus added extra css files-->
   <link rel="shortcut icon" href="#">
   <link rel="stylesheet" href="/css/main.css" >
   <link rel="stylesheet" href="/css/NavigationBar.css">
   <link rel="stylesheet" href="css/button.min.css">
-  <!-- <link rel="stylesheet" href="css/all.min.css"> -->
 
-  <!-- VRINDA -->
-  <!-- <link rel="icon" href="favicons/ms-icon-310x310.png"> -->
   <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png">
   <!-- Meta -->
   <!-- Page Description Here -->
@@ -47,20 +45,14 @@
   <link rel="stylesheet" href="fonts/playfair/stylesheet.css">
   <link rel="stylesheet" href="fonts/ionicons.min.css">
   <link rel="stylesheet" href="fonts/font-awesome.min.css">
-  <!-- <link rel="stylesheet" href="../../indestructibletype.com/fonts/Jost.css" type="text/css"
-  charset="utf-8" /> -->
-
+ 
   <!-- Vendor CSS style -->
   <link rel="stylesheet" href="css/pageloader.css">
 
   <!-- Uncomment below to load individualy vendor CSS -->
-  <!-- <link rel="stylesheet" href="js/vendor/swiper.min.css"> -->
-  <!-- <link rel="stylesheet" href="js/vendor/jquery.fullpage.min.css"> -->
-  <!-- <link rel="stylesheet" href="js/vegas/vegas.min.css"> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
   <!-- Main CSS files -->
   <link rel="stylesheet" href="css/main1.css">
 
@@ -69,8 +61,6 @@
   <link rel="stylesheet" href="css/style-font.css">
 
   <script src="js/vendor/modernizr-2.7.1.min.js"></script>
-
-
 
 </head>
 
@@ -88,18 +78,15 @@
       <li >
       </li>
       <li class=active style="color: white;"><a onClick="window.location.reload();">Home</a></li>
-      <li ><a target=Display href="article.html">Article</a></li>
-      
-      <!-- <li><a target=Display href="film.html">Films</a></li>-->
-      <!-- <li style="float:right"><a target=Display onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log In</a></li> -->
+      <li ><a target=Display href="index-fixed.html">Article</a></li>
       <li  style="float:right;color: white;text-align:center;" id="para1"><a target=Display onmouseover="window.location.reload();"></a></li>
       <script>
         window.onload = function () {
         formatAMPM();
         };
     
-    function formatAMPM() {
-    var d = new Date(),
+        function formatAMPM() {
+        var d = new Date(),
         minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
         hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
         ampm = d.getHours() >= 12 ? 'PM' : 'AM',
@@ -110,20 +97,20 @@
         var para1 = document.getElementById("para1");
             para1.innerHTML = time;
     
-    }
+        }
         
-     </script>
+      </script>
     </ul>
-    </div><br><br><br>
+  </div><br><br><br>
 
-    <span class="logo">
-  <img class="light-logo" src="img/logo.png" alt="Logo" style="width: 100px; height: 66px;">
+  <span class="logo">
+    <img class="light-logo" src="img/logo.png" alt="Logo" style="width: 100px; height: 66px;">
   </span>
   <span class="text">
     <span class="line"></span>
   </span>
 
-    <!-- BEGIN OF page cover -->
+  <!-- BEGIN OF page cover -->
   <div class="page-cover">
     <!-- Cover Background -->
     <div class="cover-bg bg-img" data-image-src="img/about10.jpg"></div>
@@ -139,10 +126,6 @@
 
   <!-- Begin of description section -->
   <div class="section " data-section="list-features">
-
-  <!-- <h1>Realtime communication with WebRTC</h1> -->
-
-  <!-- VRINDA -->
   <div class="section section-wrapper with-margin" style="padding-bottom:10px;padding: top 0px;"  ></div>
   <div class="section-content anim" style="background-image: url(img/about7.jpg);">
     <div class="row" style="padding-top: 10px;">
@@ -151,32 +134,35 @@
         <div class="title-desc anim-6" id="vision">
            
             <div class="title-desc pr-4 embed-responsive embed-responsive-1by1" style="padding: 10px;" >
-              <iframe height="470" width="470" class="embed-responsive-item" src="https://www.youtube.com/embed/EPukBJ4_X-w">
+              <iframe height="470" width="470" class="embed-responsive-item" src="https://www.youtube.com/embed/TMEa0kEe6sE">
               </iframe><br>
-              
-              <!-- <img src="img/team.png"  height="470" width="470">  -->
-              </div> 
-         
+               </div>         
           </div>
         </div>
         
         
-        <div class="col-12 col-md-6 text-left"  style="padding-right:30px" >
+  <div class="col-12 col-md-6 text-left"  style="padding-right:30px" >
 
-<div class="title-desc anim-6" id="vision">
+    <div class="title-desc anim-6" id="vision">
  
-  <div class="title-desc pr-4"><br>
-    <font color="#FFC300">
-        <h2 class="display-5 anim-2" style="text-align: center;">TUTORIAL</h2></font>
-      </div>
-        <p style="font-size:17px;color: white;"> The video here will show you a step by step process of how to conduct or join an existing video call. <br><br>
-         It's a very simple process:<br>
-        If  you need to <font color="#FFC300">start your conference</font>, just scroll down to the video element and share the URL with the second attendee.<br>
-       <br> Incase you need to join an  <font color="#FFC300">already existing</font> call,just Copy Paste the URL given to you in the below text area.<nr><br></nr>
-      <div class="ui mini labeled input">
+    <div class="title-desc pr-4"><br>
+        <h2 class="display-5 anim-2" style="text-align: center;color:#FFC300;">
+          TUTORIAL
+        </h2>
+    </div>
+        <p style="font-size:17px;color: white;"> 
+          The video here will show you a step by step process of how to conduct or
+          join an existing video call. <br><br>It's a very simple process:<br>
+          If  you need to 
+          <font color="#FFC300">start your conference</font>,
+          just scroll down to the video element and share the URL with the second 
+          attendee.<br><br> Incase you need to join an
+          <font color="#FFC300">already existing</font> 
+          call,just Copy Paste the URL given to you in the below text area.<nr><br></nr>
+    <div class="ui mini labeled input">
         
-        <input type="text" style=" border: 2px solid #F8C471;
-        border-radius: 4px;color: white;" required placeholder="https://example.com" id="id02" class="form-control-line form-control-white">
+        <input type="text" style=" border: 2px solid #F8C471;border-radius: 4px;color: white;" 
+        required placeholder="https://example.com" id="id02" class="form-control-line form-control-white">
 
       <div >
         <button id="letsgo" 
@@ -187,8 +173,10 @@
           <span class="text" style="font-size: unset;">Let's Go!</span>
         </button>
       </div>
-      </p> 
-      <p style="font-size:17px;color: white;"> <br>Scroll and endlessly have a chat!</p>
+        </p> 
+      <p style="font-size:17px;color: white;"> 
+        <br>Scroll and endlessly have a chat!
+      </p>
      
     </div> 
 
@@ -198,29 +186,30 @@
 </div>
 </div>
 <br><br><br>
-<!-- VRINDA SECOND VIDEO element -->
    <!-- BREAK -->
   <div id="videos">
     <!-- local video -->
     <video id="localVideo" autoplay muted playsinline 
-    style="border-radius: 8px;border:#F8C471; border-width:5px; border-style:solid;"></video>
+    style="border-radius: 8px;border:#F8C471; border-width:5px; border-style:solid;">
+    </video>
    
    
     <!-- remote video -->
     <video id="remoteVideo" autoplay playsinline 
-    style="border-radius: 8px;border:#F8C471; border-width:5px; border-style:solid;"></video>
+    style="border-radius: 8px;border:#F8C471; border-width:5px; border-style:solid;">
+    </video>
   </div>
 
   <!-- END OF VIDEO ELEMENT -->
 
-  <br>
+  <br><div class="buttonsadded">
   <div class="mini ui inverted segment" style="float: left;align-items:flex-start;color: white;">
-    <button class=" mini ui inverted  black button" style="width: 100px;border: 2px solid #F8C471;">Mute</button>
-    <button class=" mini ui inverted  black button" style="width: 100px;border: 2px solid #F8C471;">Camera</button>
-    <button class=" mini ui inverted  black button" style="width: 100px;border: 2px solid #F8C471;">Present</button>
-    <button class=" mini ui inverted  black button" style="width: 100px;border: 2px solid #F8C471;" id="snap">Snap</button>
-    <!-- <i class="fas fa-arrow-right"></i> -->
-    <button class=" mini ui inverted  black button" style="width: 200px;border: 2px solid #F8C471;" id="send">Send the clicked picture!</button>
+    <button class=" mini ui inverted  black button" style="width: 100px;border: 2px solid #F8C471;" id="audio_button">Mute</button>
+    <button class=" mini ui inverted  black button" style="width: 100px;border: 2px solid #F8C471;" id="video_button">Camera</button>
+    <button class=" mini ui inverted  black button" style="width: 100px;border: 2px solid #F8C471;" id="snap" disabled>Snap</button>
+    <a id="download" download="closer.png">
+      <button class=" mini ui inverted  black button" style="width: 225px;border: 2px solid #F8C471;" >Download the clicked snap!</button>
+    </a>
     <button class=" mini ui inverted red button" style="width: 100px;border: 2px solid #F8C471;" id="endcall">End Call</button>
     <label for="filter" style="font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;"><b>Filter: </b></label>
     <select id="filter" class="selectpicker" data-dropup-auto="false">
@@ -229,26 +218,19 @@
         <option value="grayscale" style="font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;"><b>Grayscale</b></option>
         <option value="invert" style="font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;"><b>Invert</b></option>
         <option value="sepia" style="font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;"><b>Sepia</b></option>
-    </select><br>
+    </select><br><br>
+  </div>
+    <div style="color:white;">&nbsp;Snapped Picture:<br>
+      <canvas id="photo"></canvas>
+    </div>   
 
-    Snapped Picture:<br>
-    <canvas id="photo"></canvas>
-
-    <br>
-    Incoming:<br>
-    <div id="trail"></div>
-
-  
  <br><br><br>
-
-
-
-  
+ 
 <!-- Begin of contact section -->
 <div class="section section-contact " data-section="contact-info" >
 
   <!-- Begin of section wrapper -->
-  <div class="section-wrapper  with-margin" style="background-image: url('img/pic2.jpg');color: white;">
+  <div class="section-wrapper with-margin" style="background-image: url('img/pic2.jpg');color: white;">
 
     <div class="section-content">
       <div class="row">
@@ -348,9 +330,7 @@
 
   <!-- Javascript main files -->
   <script src="js/main1.js"></script>
-
-  
-
+  <script src="js/main.js"></script>
 </body>
 
 </html>

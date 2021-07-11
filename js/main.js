@@ -7,6 +7,19 @@ var localStream;
 var pc;
 var remoteStream;
 var turnReady;
+var endbtn = document.getElementById('endcall');
+var snapbtn = document.getElementById('snap');
+var download=document.getElementById('download');
+endbtn.addEventListener('click', pagereload);
+
+const filterSelect = document.querySelector('select#filter');
+
+// Put variables in global scope to make them available to the browser console.
+const video = window.video = document.getElementById('remoteVideo');
+
+const canvas = window.canvas = document.querySelector('canvas');
+canvas.width = 480;
+canvas.height = 360;
 
 var pcConfig = {
   'iceServers': [{
@@ -22,17 +35,7 @@ var sdpConstraints = {
 
 /////////////////////////////////////////////
 
-// var room = 'foo';
-
-// Could prompt for room name:
-// room = prompt('Enter room name:');
-
 var socket = io.connect();
-
-// if (room !== '') {
-//   socket.emit('create or join', room);
-//   console.log('Attempted to create or  join room', room);
-// }
 
 var room = window.location.hash.substring(1);
 if (!room) {
@@ -41,7 +44,6 @@ if (!room) {
 
 socket.on('ipaddr', function(ipaddr) {
   console.log('Server IP address is: ' + ipaddr);
-  // updateRoomURL(ipaddr);
 });
 
 socket.on('created', function(room) {
@@ -64,6 +66,8 @@ socket.on('join', function (room){
 socket.on('joined', function(room) {
   console.log('joined: ' + room);
   isChannelReady = true;
+  snapbtn.disabled=false;
+  download.disabled = false;
 });
 
 socket.on('log', function(array) {
@@ -110,14 +114,14 @@ if (location.hostname.match(/localhost|127\.0\.0/)) {
 // Leaving rooms and disconnecting from peers.
 socket.on('disconnect', function(reason) {
   console.log(`Disconnected: ${reason}.`);
-  sendBtn.disabled = true;
-  snapAndSendBtn.disabled = true;
+  snapbtn.disabled=true;
+  download.disabled = true;
 });
 
 socket.on('bye', function(room) {
   console.log(`Peer leaving room ${room}.`);
-  sendBtn.disabled = true;
-  snapAndSendBtn.disabled = true;
+  snapbtn.disabled=true;
+  download.disabled = true;
   // If peer did not create the room, re-enter to be creator.
   if (!isInitiator) {
     window.location.reload();
@@ -272,6 +276,8 @@ function requestTurn(turnURL) {
 
 function handleRemoteStreamAdded(event) {
   console.log('Remote stream added.');
+  snapbtn.disabled=false;
+  download.disabled=false;  
   remoteStream = event.stream;
   remoteVideo.srcObject = remoteStream;
 }
@@ -300,4 +306,44 @@ function stop() {
 
 function randomToken() {
   return Math.floor((1 + Math.random()) * 1e16).toString(16).substring(1);
+}
+
+function pagereload() {
+  window.location.hash = '';
+  window.location.reload();
+}
+
+//download the snapped picture
+download.onclick=function(){
+  var image = document.getElementById('photo').toDataURL("image/png")
+      .replace("image/png", "image/octet-stream");
+  download.setAttribute("href", image);
+}
+
+//filter change
+snapbtn.onclick = function() {
+  canvas.className = filterSelect.value;
+  canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+  download.disabled = false;
+};
+
+filterSelect.onchange = function() {
+  video.className = filterSelect.value;
+};
+
+
+//mute and video functions
+
+var video_button = document.getElementById('video_button');
+
+video_button.onclick = function(){
+  alert("this will toggle the video feature. To undo, press the button again!");
+  localStream.getVideoTracks()[0].enabled = !(localStream.getVideoTracks()[0].enabled);
+}
+
+var audio_button = document.getElementById("audio_button");
+
+audio_button.onclick = function(){
+  alert("this will toggle the audio feature. To undo, press the button again!");
+  localStream.getAudioTracks()[0].enabled = !(localStream.getAudioTracks()[0].enabled);
 }
