@@ -8,4 +8,4 @@ The video conferencing webapp has the following features:
 5. take a snap of the remote user and download it
 
 You may check the app at:
-https://git.heroku.com/closer-msteams1.git
+https://closer-msteams1.herokuapp.com/
