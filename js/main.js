@@ -322,9 +322,10 @@ download.onclick=function(){
 
 //filter change
 snapbtn.onclick = function() {
+  download.disabled = false;
   canvas.className = filterSelect.value;
   canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
-  download.disabled = false;
+  
 };
 
 filterSelect.onchange = function() {

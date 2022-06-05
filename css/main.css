@@ -1,7 +1,7 @@
 
 video {
   max-width: 100%;
-  width: 550px;
+  width: 450px;
 }
 
 .none {
@@ -30,10 +30,10 @@ video {
 }
 
 canvas {
-  border-radius: 8px;border:#F8C471;border-width:5px;border-style:solid;max-width: 100%;  width: 550px;
+  border-radius: 8px;border:#F8C471;border-width:5px;border-style:solid;max-width: 100%;  width: 350px;
 }
 
-.buttonsadded {
+/* .buttonsadded {
   top: 300px;
   position: relative;
-}
+} */
